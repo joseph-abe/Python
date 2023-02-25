@@ -1,6 +1,6 @@
-def add(items,name,price=0):
-    items[name] = price
-    return items
+def add(itemsdict,name,price=0):
+    itemsdict[name] = price
+    return itemsdict
 
 if __name__ == '__main__':
     items = {}
@@ -12,19 +12,25 @@ if __name__ == '__main__':
     print(items)
     count = 0
     total = 0
-    cart = {}
+    cart = 0
+    method = []
     no_of_calls = int(input("Enter number of calls: "))
     for oper in range(no_of_calls):
-        method = input("Enter operation: ")
-        if method == 'add':
-            name = input("Enter name: ")
-            cart = add(cart, name)
-        if method == 'total':
-            for item in cart:
-                count += 1
-            print("Total shopping cart items:%d" % count)
-        if method == 'len':
-            for item in cart:
-                total = total + cart[item]
-            print("Total :%d" % total)
+        method.append(list(input("Enter multiple values: ").split()))
+        print("List of methods: ", method)
+    for oper in method:
+        if 'add' in oper:
+            count += 1
+        if 'total' in oper:
+            print("Total shopping cart:%d" % count)
+        if 'len' in oper:
+            for calc in method:
+                if 'add' in calc[0]:
+                    for item in items:
+                        if calc[1] == item:
+                            cart = cart + items[item]
+            print("Total shopping cart items:",cart)
+
+
+
 
