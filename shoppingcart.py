@@ -1,9 +1,9 @@
 def add(itemsdict,name,price=0):
     '''
-    :param itemsdict:
-    :param name:
-    :param price:
-    :return:
+    :param itemsdict: dict which contains the items
+    :param name: Name of the item to be added
+    :param price: Price of the item to be added
+    :return:dict
     '''
     itemsdict[name] = price
     return itemsdict
