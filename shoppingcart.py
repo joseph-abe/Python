@@ -1,16 +1,32 @@
 def add(itemsdict,name,price=0):
+    '''
+    :param itemsdict:
+    :param name:
+    :param price:
+    :return:
+    '''
     itemsdict[name] = price
     return itemsdict
 
 if __name__ == '__main__':
+    '''
+    Perform the below Shopping cart operations:
+    add: Add items to Shopping Cart
+    len: Calculate the Total number of items added in cart
+    total: Calculate the Total value of cart
+    '''
     items = {}
+    count = 0
+    cart = 0
+    method = []
+
+    # Enter the no of items along with name and price of each item
     no_of_items = int(input("Enter number of items: "))
     for additem in range(no_of_items):
         name, price = input("Enter name and price: ").split()
         items = add(items,name,int(price))
-    count = 0
-    cart = 0
-    method = []
+
+    # Add items to cart and calculate total no of items and value of cart
     no_of_calls = int(input("Enter number of calls: "))
     for call in range(no_of_calls):
         method.append(list(input("Enter multiple values: ").split()))
