@@ -32,10 +32,12 @@ if __name__ == '__main__':
         method.append(list(input("Enter multiple values: ").split()))
         for oper in method[call]:
             if 'add' in oper:
+                # Calculate total no of items added to cart
                 count += 1
             if 'len' in oper:
                 print("Total shopping cart items:%d" % count)
             if 'total' in oper:
+                # Calculate the Shopping cart value
                 for calc in method:
                     if 'add' in calc[0]:
                         for item in items:
