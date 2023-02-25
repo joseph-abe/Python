@@ -1,9 +1,14 @@
 # Shopping Cart
 
-## Python code written using nested lists and dictionaries
+## Python code written using nested lists and dictionaries to perform the below operations:
+
+* Add items to Shopping Cart
+* Calculate the Total number of items added in cart
+* Calculate the Total value of cart
 
 # Sample Output:
 
+```
 Enter number of items: 2
 Enter name and price: bike 1000
 Enter name and price: head 100
@@ -21,6 +26,6 @@ Enter multiple values: len
 Total shopping cart items:3
 Enter multiple values: total
 Total shopping cart: 1200
-
+```
 
 
