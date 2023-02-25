@@ -1,8 +1,9 @@
-Shopping Cart
+# Shopping Cart
 
-Python code written using nested lists and dictionaries
+## Python code written using nested lists and dictionaries
 
-Sample Output:
+# Sample Output:
+
 Enter number of items: 2
 Enter name and price: bike 1000
 Enter name and price: head 100
