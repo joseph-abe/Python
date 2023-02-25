@@ -1,5 +1,7 @@
 def add(itemsdict,name,price=0):
     '''
+    This function to used to add items to the inventory
+
     :param itemsdict: dict which contains the items
     :param name: Name of the item to be added
     :param price: Price of the item to be added
