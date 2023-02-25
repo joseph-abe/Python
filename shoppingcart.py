@@ -40,10 +40,10 @@ if __name__ == '__main__':
                 print("Total shopping cart items:%d" % count)
             if 'total' in oper:
                 # Calculate the Shopping cart value
-                for calc in method:
-                    if 'add' in calc[0]:
+                for oper_name in method:
+                    if 'add' in oper_name[0]:
                         for item in items:
-                            if calc[1] == item:
+                            if oper_name[1] == item:
                                 cart = cart + items[item]
                 print("Total shopping cart:",cart)
                 cart = 0
